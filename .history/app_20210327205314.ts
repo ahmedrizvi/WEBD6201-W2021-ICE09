@@ -38,6 +38,7 @@ app.use(function(err:createError.HttpError, req:express.Request, res:express.Res
   let message = err.message;
   let error = req.app.get('env') === 'development' ? err : {};
 
+  
 
   // render the error page
   res.status(err.status || 500);
